@@ -15,10 +15,6 @@ gulp.task('static', function () {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('nsp', function (cb) {
-  nsp('package.json', cb);
-});
-
 gulp.task('pre-test', function () {
   return gulp.src('lib/**/*.js')
     .pipe(istanbul({includeUntested: true}))
@@ -40,5 +36,5 @@ gulp.task('test', ['pre-test'], function (cb) {
     });
 });
 
-gulp.task('prepublish', ['nsp']);
+gulp.task('prepublish');
 gulp.task('default', ['static', 'test']);

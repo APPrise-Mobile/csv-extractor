@@ -31,9 +31,11 @@
   "license": "MIT",
   "dependencies": {
     "csv-parse": "^1.0.0",
-    "detect-character-encoding": "^0.2.1",
     "lodash": "^3.10.1",
     "q": "^1.4.1",
     "stream-transform": "^0.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
